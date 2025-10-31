@@ -4,8 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HW4 - Три кота</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
+<div class="cats-container">
 
+    <!-- Коржик - CSS -->
+    <div class="card korzhik">
+        <img src="../pics/korzhik.jpg" alt="Коржик">
+        <h2>Коржик</h2>
+        <p class="age">5 лет</p>
+        <p class="description">Активный и веселый, добрый и наивный</p>
+        <button class="like">❤️ Лайк</button>
+        <button class="pet">🐾 Погладить</button>
+    </div>
+
+    <!-- Карамелька - Tailwind -->
+    <div class="w-64 rounded-xl bg-white p-5 shadow">
+        <img src="../pics/karamelka.jpg" alt="Карамелька" class="w-full rounded-lg">
+        <h2 class="mt-3 text-lg text-pink-500">Карамелька</h2>
+        <p class="text-sm text-gray-400">4 года</p>
+        <p class="mt-2 text-sm text-gray-600">Милая и утонченная, послушная и сообразительная</p>
+        <button class="mt-3 rounded bg-pink-500 px-3 py-2 text-sm text-white hover:bg-pink-300">❤️ Лайк</button>
+        <button class="ml-2 mt-3 rounded bg-pink-200 px-3 py-2 text-sm text-pink-500 hover:bg-pink-100 hover:text-pink-300">🐾 Погладить</button>
+    </div>
+
+    <!-- Компот - SCSS -->
+    <div class="card kompot">
+        <img src="../pics/kompot.png" alt="Компот">
+        <h2>Компот</h2>
+        <p class="age">6 лет</p>
+        <p class="description">Скромный и нерасторопный, но добрый и отзывчивый</p>
+        <button class="like">❤️ Лайк</button>
+        <button class="pet">🐾 Погладить</button>
+    </div>
+</div>
 </body>
 </html>
