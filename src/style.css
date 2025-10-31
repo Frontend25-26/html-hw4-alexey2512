@@ -94,7 +94,7 @@ body {
 }
 
 .korzhik button:hover {
-    opacity: 0.8;
+    opacity: 0.5;
 }
 
 
@@ -135,7 +135,7 @@ body {
     font-size: 14px;
 }
 .kompot .pet:hover, .kompot .like:hover {
-    opacity: 0.8;
+    opacity: 0.5;
 }
 .kompot .like {
     background: #66bb6a;
