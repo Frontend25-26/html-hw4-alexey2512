@@ -4,8 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HW4 - Три кота</title>
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="korzhik.css">
+    <link rel="stylesheet" href="./kompot.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
+<div class="cats-container">
 
+    <!-- Коржик - CSS -->
+    <div class="korzhik">
+        <img src="assets/img/korzhik.jpg" alt="Коржик" width="940" height="940">
+        <h2>Коржик</h2>
+        <p class="age">5 лет</p>
+        <p class="description">Активный и веселый, добрый и наивный</p>
+        <button class="like">❤️ Лайк</button>
+        <button class="pet">🐾 Погладить</button>
+    </div>
+
+    <!-- Карамелька - Tailwind -->
+    <div class="w-64 rounded-xl bg-white p-5 shadow">
+        <img src="assets/img/karamelka.jpg" alt="Карамелька" class="w-full rounded-lg" width="800" height="800">
+        <h2 class="mt-4 text-lg text-pink-500">Карамелька</h2>
+        <p class="mt-1 text-sm text-gray-400">4 года</p>
+        <p class="mt-2 text-sm text-gray-600">Милая и утонченная, послушная и сообразительная</p>
+        <button class="mt-3 rounded bg-pink-500 px-3 py-2 text-sm text-white hover:bg-pink-400">❤️ Лайк</button>
+        <button class="ml-2 mt-3 rounded bg-pink-200 px-3 py-2 text-sm text-pink-500 hover:bg-pink-100">🐾 Погладить
+        </button>
+    </div>
+
+    <!-- Компот - SCSS -->
+    <div class="kompot">
+        <img src="assets/img/kompot.png" alt="Компот" width="800" height="800">
+        <h2>Компот</h2>
+        <p class="age">6 лет</p>
+        <p class="description">Скромный и нерасторопный, но добрый и отзывчивый</p>
+        <button class="like">❤️ Лайк</button>
+        <button class="pet">🐾 Погладить</button>
+    </div>
+</div>
 </body>
 </html>

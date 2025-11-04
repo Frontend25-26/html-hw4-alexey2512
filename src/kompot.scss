@@ -1,0 +1,73 @@
+$px-4: 4px;
+$px-8: 8px;
+$px-12: 12px;
+$px-20: 20px;
+$px-256: 256px;
+$font-size: 14px;
+$header-font-size: 18px;
+$shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+$green: #4caf50;
+$light-green: #66bb6a;
+$super-light-green: #e8f5e9;
+$warm-green: #43a047;
+$gray: #999;
+$dark-gray: #666;
+
+@mixin rounded-border($rad) {
+    border: none;
+    border-radius: $rad;
+}
+
+%button {
+    @include rounded-border($px-4);
+    margin-top: $px-12;
+    padding: $px-8 $px-12;
+    font-size: $font-size;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+.kompot {
+    background: white;
+    padding: $px-20;
+    border-radius: $px-12;
+    box-shadow: $shadow;
+    width: $px-256;
+
+    img {
+        @include rounded-border($px-8);
+        width: 100%;
+    }
+
+    h2 {
+        color: $green;
+        font-size: $header-font-size;
+        margin: $px-12 0 $px-4;
+    }
+
+    .age {
+        color: $gray;
+        font-size: $font-size;
+    }
+
+    .description {
+        color: $dark-gray;
+        font-size: $font-size;
+        margin-top: $px-8;
+    }
+
+    .like {
+        @extend %button;
+        background: $light-green;
+        color: white;
+    }
+
+    .pet {
+        @extend %button;
+        background: $super-light-green;
+        color: $warm-green;
+        margin-left: $px-8;
+    }
+}
