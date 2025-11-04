@@ -1,18 +1,11 @@
-$p-4: 4px;
-$p-8: 8px;
-$p-12: 12px;
-$p-16: 16px;
-$p-20: 20px;
-$p-24: 24px;
-$p-32: 32px;
-$p-64: 64px;
-$p-128: 128px;
-$p-256: 256px;
-$p-512: 512px;
-$p-1024: 1024px;
+$px-4: 4px;
+$px-8: 8px;
+$px-12: 12px;
+$px-20: 20px;
+$px-256: 256px;
 $font-size: 14px;
 $hfont-size: 18px;
-$shadow: 0 2px 8px rgba(0,0,0,0.1);
+$shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 $green: #4caf50;
 $light-green: #66bb6a;
 $super-light-green: #e8f5e9;
@@ -20,62 +13,61 @@ $warm-green: #43a047;
 $gray: #999;
 $dark-gray: #666;
 
-.kompot {
-  background: white;
-  padding: $p-20;
-  border-radius: $p-12;
-  box-shadow: $shadow;
-  width: $p-256;
-
-  @mixin none-border($rad) {
+@mixin rounded-border($rad) {
     border: none;
     border-radius: $rad;
-  }
+}
 
-  img {
-    width: 100%;
-    @include none-border($p-8);
-  }
-
-  h2 {
-    color: $green;
-    font-size: $hfont-size;
-    margin: $p-12 0 $p-4;
-  }
-
-  .age {
-    color: $gray;
-    font-size: $font-size;
-  }
-
-  .description {
-    color: $dark-gray;
-    font-size: $font-size;
-    margin-top: $p-8;
-  }
-
-  %button {
-    margin-top: $p-12;
-    padding: $p-8 $p-12;
-    @include none-border($p-4);
-    cursor: pointer;
+%button {
+    @include rounded-border($px-4);
+    margin-top: $px-12;
+    padding: $px-8 $px-12;
     font-size: $font-size;
 
     &:hover {
-      opacity: 0.5;
+        opacity: 0.8;
     }
-  }
+}
 
-  .like {
-    @extend %button;
-    background: $light-green;
-    color: white;
-  }
+.kompot {
+    background: white;
+    padding: $px-20;
+    border-radius: $px-12;
+    box-shadow: $shadow;
+    width: $px-256;
 
-  .pet {
-    @extend %button;
-    background: $super-light-green;
-    color: $warm-green;
-    margin-left: $p-8;
-  }
+    img {
+        @include rounded-border($px-8);
+        width: 100%;
+    }
+
+    h2 {
+        color: $green;
+        font-size: $hfont-size;
+        margin: $px-12 0 $px-4;
+    }
+
+    .age {
+        color: $gray;
+        font-size: $font-size;
+    }
+
+    .description {
+        color: $dark-gray;
+        font-size: $font-size;
+        margin-top: $px-8;
+    }
+
+    .like {
+        @extend %button;
+        background: $light-green;
+        color: white;
+    }
+
+    .pet {
+        @extend %button;
+        background: $super-light-green;
+        color: $warm-green;
+        margin-left: $px-8;
+    }
 }

@@ -1,0 +1,70 @@
+:root {
+    --px-4: 4px;
+    --px-8: 8px;
+    --px-12: 12px;
+    --px-20: 20px;
+    --px-256: 256px;
+    --font-size: 14px;
+    --header-font-size: 18px;
+    --shadow: 0 2px 8px rgba(0,0,0,0.1);
+    --background-white: #f5f5f5;
+    --blue: #2c99dc;
+    --light-blue: #45a4da;
+    --super-light-blue: #d6e7f8;
+    --warm-blue: #2b94d5;
+    --gray: #999;
+    --dark-gray: #666;
+}
+
+.korzhik {
+    background: white;
+    padding: var(--px-20);
+    border-radius: var(--px-12);
+    box-shadow: var(--shadow);
+    width: var(--px-256);
+
+    img {
+        width: 100%;
+        border-radius: var(--px-8);
+    }
+
+    h2 {
+        color: var(--blue);
+        font-size: var(--header-font-size);
+        margin: var(--px-12) 0 var(--px-4);
+    }
+
+    .age {
+        color: var(--gray);
+        font-size: var(--font-size);
+    }
+
+    .description {
+        color: var(--dark-gray);
+        font-size: var(--font-size);
+        margin-top: var(--px-8);
+    }
+
+    button {
+        margin-top: var(--px-12);
+        padding: var(--px-8) var(--px-12);
+        border: none;
+        border-radius: var(--px-4);
+        font-size: var(--font-size);
+    }
+
+    .like {
+        background: var(--light-blue);
+        color: white;
+    }
+
+    .pet {
+        background: var(--super-light-blue);
+        color: var(--warm-blue);
+        margin-left: var(--px-8);
+    }
+
+    button:hover {
+        opacity: 0.8;
+    }
+}
