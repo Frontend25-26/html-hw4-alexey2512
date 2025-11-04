@@ -4,7 +4,7 @@ $px-12: 12px;
 $px-20: 20px;
 $px-256: 256px;
 $font-size: 14px;
-$hfont-size: 18px;
+$header-font-size: 18px;
 $shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 $green: #4caf50;
 $light-green: #66bb6a;
@@ -43,7 +43,7 @@ $dark-gray: #666;
 
     h2 {
         color: $green;
-        font-size: $hfont-size;
+        font-size: $header-font-size;
         margin: $px-12 0 $px-4;
     }
 
